@@ -2,7 +2,8 @@ const {Sequelize} = require("sequelize");
 // const sequelize = new Sequelize("sqlite::memory:");
 const sequelize = new Sequelize({
     dialect: "sqlite",
-    storage: "C:\\Users\\GopAL\\Desktop\\backEnd\\sequelize23\\db23\\sqllite12.db"
+    // storage: "C:\\Users\\GopAL\\Desktop\\backEnd\\sequelize23\\db23\\sqlite12.db",
+    storage: "./db23/sqlite12.db"
 });
 const BlogPosts = require('./models/posts');
 
