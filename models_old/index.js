@@ -14,7 +14,7 @@ Books.hasOne(Reviews, {
 */
 
 
-
+console.log('>...................')
 Books.sync({force:true});
 Reviews.sync({force:true});
 

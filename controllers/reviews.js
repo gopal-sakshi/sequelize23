@@ -1,21 +1,23 @@
-const { Reviews:reviews } = require('../models');
-const table23 = require('../models_old');
+const db = require('../models');
+// const table23 = require('../models_old');
 var express = require('express');
 var router = express.Router();
 
 router.post('/addReview', async (req, res) => {
-    let review = req.body
-    reviews.create(review).then(data => {
+    let review = req.body;
+    await db.reviews.create(review).then(data => {
         res.status(201).send(data);
-    })
+    });
 });
 
 router.get('/getAll', async (req, res) => {
-    await table23.findAll();
-    reviews.findAll({
-        include: 'Books'
+    // db.reviews.findAll({
+    //     include: db.books
+    // })
+    let list23 = await db.books.findAll({
+        include: db.reviews
     })
-    res.status(201).send('waituuuu');
+    res.status(201).send(list23);
 })
 
 module.exports = router;
