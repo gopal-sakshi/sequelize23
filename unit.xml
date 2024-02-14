@@ -1,72 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.2900" tests="13" failures="13">
-  <testsuite name="Root Suite" timestamp="2023-05-20T14:01:56" tests="0" time="0.0000" failures="0">
+<testsuites name="Mocha Tests" time="0.0860" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-02-13T08:44:12" tests="0" time="0.0000" failures="0">
   </testsuite>
-  <testsuite name="blog_posts_api_medium" timestamp="2023-05-20T14:01:56" tests="13" file="/projects/challenge/test/index.spec.js" time="0.2900" failures="13">
-    <testcase name="blog_posts_api_medium should create a published post" time="0.0660" classname="should create a published post">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 404
-    at Context.<anonymous> (test/index.spec.js:69:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should create an unpublished post" time="0.0100" classname="should create an unpublished post">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 201 but got 404
-    at Context.<anonymous> (test/index.spec.js:79:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should fetch all the posts" time="0.0330" classname="should fetch all the posts">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
-    at Context.<anonymous> (test/index.spec.js:88:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should fetch all the posts if the isPublished filter value does not exist" time="0.0310" classname="should fetch all the posts if the isPublished filter value does not exist">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
-    at Context.<anonymous> (test/index.spec.js:103:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should fetch all posts for an author" time="0.0300" classname="should fetch all posts for an author">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
-    at Context.<anonymous> (test/index.spec.js:110:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should fetch no posts if author filter value does not exist" time="0.0210" classname="should fetch no posts if author filter value does not exist">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
-    at Context.<anonymous> (test/index.spec.js:117:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should fetch all published posts for an author" time="0.0330" classname="should fetch all published posts for an author">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
-    at Context.<anonymous> (test/index.spec.js:124:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should fetch all unpublished posts for an author" time="0.0220" classname="should fetch all unpublished posts for an author">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
-    at Context.<anonymous> (test/index.spec.js:131:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should fetch a single post" time="0.0100" classname="should fetch a single post">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 200 but got 404
-    at Context.<anonymous> (test/index.spec.js:138:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should get 404 if the post ID does not exist" time="0.0040" classname="should get 404 if the post ID does not exist">
-      <failure message="expected &apos;&lt;!DOCTYPE html&gt;\n&lt;html lang=&quot;en&quot;&gt;\n&lt;head&gt;\n&lt;meta charset=&quot;utf-8&quot;&gt;\n&lt;title&gt;Error&lt;/title&gt;\n&lt;/head&gt;\n&lt;body&gt;\n&lt;pre&gt;Cannot GET /posts/32323&lt;/pre&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n&apos; to deeply equal &apos;ID not found&apos;" type="AssertionError"><![CDATA[AssertionError: expected '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<title>Error</title>\n</head>\n<body>\n<pre>Cannot GET /posts/32323</pre>\n</body>\n</html>\n' to deeply equal 'ID not found'
-    at Context.<anonymous> (test/index.spec.js:145:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should get 405 for a put request to /posts/:id" time="0.0100" classname="should get 405 for a put request to /posts/:id">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
-    at Context.<anonymous> (test/index.spec.js:151:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should get 405 for a patch request to /posts/:id" time="0.0100" classname="should get 405 for a patch request to /posts/:id">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
-    at Context.<anonymous> (test/index.spec.js:157:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
-    </testcase>
-    <testcase name="blog_posts_api_medium should get 405 for a delete request to /posts/:id" time="0.0100" classname="should get 405 for a delete request to /posts/:id">
-      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
-    at Context.<anonymous> (test/index.spec.js:163:30)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
+  <testsuite name="blog_posts_api_medium" timestamp="2024-02-13T08:44:12" tests="1" file="/home/gsakshi/Desktop/repos23/backend23/sequelize23/test/index.spec.js" time="0.0860" failures="1">
+    <testcase name="blog_posts_api_medium should fetch all the posts if the isPublished filter value does not exist" time="0.0860" classname="should fetch all the posts if the isPublished filter value does not exist">
+      <failure message="expected [] to deeply equal [ Array(4) ]" type="AssertionError"><![CDATA[AssertionError: expected [] to deeply equal [ Array(4) ]
+    at Context.<anonymous> (test/index.spec.js:104:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
     </testcase>
   </testsuite>
 </testsuites>

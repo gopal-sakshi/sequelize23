@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "club23": "Real Madrid",
+        "stadium22": "Santiago Bernabeu"
+    },
+    {
+        "id": 2,
+        "club23": "Barca",
+        "stadium22": "CampNou"
+    },
+    {
+        "id": 3,
+        "club23": "Atleti",
+        "stadium22": "Vicente Calderon"
+    },
+    {
+        "id": 4,
+        "club23": "sevilla",
+        "stadium22": "Roman Sanchez pijuan"
+    }
+]

@@ -5,15 +5,15 @@ const sequelize = new Sequelize({
     // storage: "C:\\Users\\GopAL\\Desktop\\backEnd\\sequelize23\\db23\\sqlite12.db",
     storage: "./db23/sqlite12.db"
 });
-const BlogPosts = require('./models/posts');
+const Books = require('./models/books');
 
 return sequelize.authenticate()
     .then(result => {
         console.log(`SQLite successfully connected!`);
-        return BlogPosts.sync();
+        return Books.sync();
     })
     .then(result => {
-        console.log(`Blog Posts table created`);
+        console.log(`Books table created`);
         return result;
     })
     .catch(error => {

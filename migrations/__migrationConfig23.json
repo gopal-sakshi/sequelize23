@@ -1,0 +1,11 @@
+{
+    "dvpt23": {
+        "dialect": "sqlite",
+        "storage": "db23/sqlite12.db"
+    },
+    "testing23": {
+        "dialect": "sqlite3",
+        "storage": ":memory:"
+    },
+    "prod23": {}
+}

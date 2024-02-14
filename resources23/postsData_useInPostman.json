@@ -1,0 +1,58 @@
+[
+    {
+        "isPublished": false,
+        "title": "antarmukham",
+        "author": "yandamuri",
+        "timestamp": "2024-02-13T08:59:39.483Z",
+        "publishedDate": null,
+        "id": 1
+    },
+    {
+        "isPublished": true,
+        "title": "atlass shrugged",
+        "author": "ayn rand",
+        "timestamp": "2024-02-13T09:06:14.080Z",
+        "publishedDate": 1707815174112,
+        "id": 2
+    },
+    {
+        "isPublished": true,
+        "title": "fountain head",
+        "author": "ayn rand",
+        "timestamp": "2024-02-13T09:08:54.650Z",
+        "publishedDate": 1707815334696,
+        "id": 3
+    },
+    {
+        "isPublished": true,
+        "title": "tulasidalam",
+        "author": "yandamuri",
+        "timestamp": "2024-02-13T09:09:23.376Z",
+        "publishedDate": 1707815363397,
+        "id": 4
+    },
+    {
+        "isPublished": true,
+        "title": "rakta sindhooram",
+        "author": "yandamuri",
+        "timestamp": "2024-02-13T09:09:30.810Z",
+        "publishedDate": 1707815370833,
+        "id": 5
+    },
+    {
+        "isPublished": false,
+        "title": "chiru biography",
+        "author": "yandamuri",
+        "timestamp": "2024-02-13T09:10:05.695Z",
+        "publishedDate": null,
+        "id": 6
+    },
+    {
+        "isPublished": true,
+        "title": "dabbu to the power of dabbu",
+        "author": "yandamuri",
+        "timestamp": "2024-02-13T09:10:26.342Z",
+        "publishedDate": 1707815426357,
+        "id": 7
+    }
+]
