@@ -7,20 +7,18 @@ module.exports = (sequelize, Sequelize) => {
             primaryKey      : true,
         }
     }, 
-    { 
-        associate222: function(models) {
+    { initialAutoIncrement: 1000 })
 
-            // Enrollment.belongsTo(models.Product, {as: 'Product'});
-            // Enrollment.belongsTo(models.School, { as: 'School' });
-    
-            // models.Person.belongsToMany(models.Course, {through: {model: Enrollment},foreignKey: 'StudentEnrollId'});
-            // models.Course.belongsToMany(models.Person, {through: {model: Enrollment},foreignKey: 'CourseEnrollId'});
+    ActorMovies.associate222 = function(models) {
 
-            ActorMovies
-        },
-        initialAutoIncrement: 1000 
-    })
+        // Enrollment.belongsTo(models.Product, {as: 'Product'});
+        // Enrollment.belongsTo(models.School, { as: 'School' });
 
-    return ActorMovies;
+        // models.Person.belongsToMany(models.Course, {through: {model: Enrollment},foreignKey: 'StudentEnrollId'});
+        // models.Course.belongsToMany(models.Person, {through: {model: Enrollment},foreignKey: 'CourseEnrollId'});
+
+        ActorMovies
+    }
+    return ActorMovies.sync({force:true});
 
 }

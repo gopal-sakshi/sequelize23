@@ -20,6 +20,22 @@ module.exports = (sequelize, Sequelize) => {
         Books.hasOne(dbInstance23.reviews, {
             foreignKey: { allowNull: false }
         });
+
+        /*
+            we defined Books.hasOne ----> meaning we can use "include" only within books model
+            
+            // WORKSSSSSSSSSSS
+            await db.books.findAll({
+                include: db.reviews
+            });
+
+            // DOESNT WORK... for it to work, we need to create association in reviews model also
+            await db.reviews.findAll({
+                include: db.books
+            });
+        */
     }
+
+    // Books.sync({ force:true })
     return Books;
 }

@@ -10,5 +10,14 @@ module.exports = (sequelize, Sequelize) => {
         publishedDate : Sequelize.BIGINT
     }, { timestamps : false });
 
+    Reviews.associate22 = (allModelsList23) => {
+        // here allModelsList23 is nothing but "db" object in index.js
+        Reviews.belongsTo(allModelsList23.books, {
+            foreignKey: { allowNull: false }
+        })
+    }
+
+    // Reviews.sync({ force:true })
+
     return Reviews;
 }

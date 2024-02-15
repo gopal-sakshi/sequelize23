@@ -14,8 +14,8 @@ router.get('/getAll', async (req, res) => {
     // db.reviews.findAll({
     //     include: db.books
     // })
-    let list23 = await db.books.findAll({
-        include: db.reviews
+    let list23 = await db.reviews.findAll({
+        include: db.books
     })
     res.status(201).send(list23);
 })
