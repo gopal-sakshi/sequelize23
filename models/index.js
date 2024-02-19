@@ -12,7 +12,8 @@ db.books = require("./m_books")(sequelize, Sequelize);
 db.reviews = require("./m_reviews")(sequelize, Sequelize);
 // db.movies = require("./m_movies")(sequelize, Sequelize);
 // db.actors = require("./m_actors")(sequelize, Sequelize);
-
+db.students = require("./m_students")(sequelize, Sequelize);
+db.courses = require("./m_courses")(sequelize, Sequelize);
 
 Object.keys(db).forEach(modelName => {
     if(db[modelName].associate22) {
@@ -22,5 +23,10 @@ Object.keys(db).forEach(modelName => {
 
 // db.books.sync({ force:true });
 // db.reviews.sync({ force:true });
+// db.students.sync({ force:true });
+// db.courses.sync({ force:true });
+
+// this is needed... otherwise junction table wont be created
+// sequelize.sync({ force: true });                
 
 module.exports = db;

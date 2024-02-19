@@ -1,23 +1,23 @@
 module.exports = (sequelize, Sequelize) => {
-    const actors = sequelize.define("actor", {
+    const students = sequelize.define("student", {
         id: {
             type: Sequelize.INTEGER,
             autoIncrement: true,
             primaryKey: true
         },
-        name : {
+        name: Sequelize.TEXT,
+        email : {
             type: Sequelize.TEXT,
             unique: true
         },
-        skills : Sequelize.JSON,
-        industry: Sequelize.TEXT,
+        class: Sequelize.TEXT
     }, { 
         initialAutoIncrement: 100, timestamps : false 
     });
 
-    actors.associate22 = (db23) => {
-        actors.belongsToMany(db23.movies, { through: 'ActorMovies23' })
+    students.associate22 = (db23) => {
+        students.belongsToMany(db23.courses, { through: 'students_courses' })
     }
 
-    return actors;
+    return students;
 }

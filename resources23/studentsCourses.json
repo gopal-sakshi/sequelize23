@@ -1,0 +1,40 @@
+[
+    {
+        "courses": [
+            { "course_name": "relativity", "subject": "SCIENCE", "duration": "2 years", "fees": "50000" },
+            { "course_name": "world wars", "subject": "SOCIAL", "duration": "5 years", "fees": "15000" },
+            { "course_name": "algebra", "subject": "MATHS", "duration": "1 years", "fees": "25000" },
+            { "course_name": "trigonometry", "subject": "MATHS", "duration": "2 years", "fees": "35000" },
+            { "course_name": "biology", "subject": "SCIENCE", "duration": "2 years", "fees": "45000" },
+            { "course_name": "communism", "subject": "SOCIAL", "duration": "3 years", "fees": "25000" },
+            { "course_name": "socialism", "subject": "SOCIAL", "duration": "7 years", "fees": "25000" },
+            { "course_name": "economics", "subject": "SOCIAL", "duration": "4 years", "fees": "10000" }
+        ]
+    },
+    {
+        "students": [
+            { "name": "euclid", "email": "euclid23@gmail.com", "class": "intermediate" },
+            { "name": "hitler23", "email": "hitler23@gmail.com", "class": "intermediate" },
+            { "name": "mussolini23", "email": "mussolini23@gmail.com", "class": "intermediate" },
+            { "name": "stalin23", "email": "stalin34@gmail.com", "class": "intermediate" },
+            { "name": "karl marx", "email": "kmarx@gmail.com", "class": "intermediate" },
+            { "name": "hipparchus", "email": "hipparchus23@gmail.com", "class": "intermediate" },
+            { "name": "pythagoras", "email": "pythagoras@gmail.com", "class": "intermediate" },
+            { "name": "roosevelt", "email": "roosevelt23@gmail.com", "class": "intermediate" },
+            { "name": "einsten23", "email": "einsten23@gmail.com", "class": "intermediate" },
+            { "name": "amartya sen", "email": "asen23@gmail.com", "class": "intermediate" },
+            { "name": "rousseau", "email": "rousseau23@gmail.com", "class": "intermediate" },
+            { "name": "hirohito", "email": "hirohito23@gmail.com", "class": "intermediate" },
+            { "name": "arya bhatta", "email": "abhatta23@gmail.com", "class": "intermediate" },
+            { "name": "ramanujan", "email": "ramanujan23@gmail.com", "class": "intermediate" },
+            { "name": "darwin", "email": "charlesd23@gmail.com", "class": "intermediate" },
+            { "name": "Goebbels", "email": "goebbels23@gmail.com", "class": "intermediate" },
+            { "name": "fleming", "email": "alexanderf23@gmail.com", "class": "intermediate" },
+            { "name": "nehru", "email": "nehru23@gmail.com", "class": "intermediate" },
+            { "name": "aristotle", "email": "aristotle23@gmail.com", "class": "intermediate" },
+            { "name": "adam smith", "email": "asmith23@gmail.com", "class": "intermediate" },
+            { "name": "lenin", "email": "lenin23@gmail.com", "class": "intermediate" },
+            { "name": "mendel", "email": "gregorm23@gmail.com", "class": "intermediate" }
+        ]
+    }
+]

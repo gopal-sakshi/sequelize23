@@ -10,12 +10,12 @@ require('./connection13');              // connection13 uses raw sqlite
 const reviewsRouter = require('./routes/reviews');
 const booksRouter = require('./routes/books');
 const otherRouter = require('./routes/others23');
-
+const eduRouter = require('./routes/student_course');
 
 app.use('', booksRouter);
 app.use('/reviews', reviewsRouter);
 app.use('', otherRouter);
-
+app.use('/edu', eduRouter);
 /********************* ERROR HANDLER stuff ******************************************/
 function routeHandler23(acceptFnAsParam) {
     // MORAL ===> try/catch wont catch errors thrown in async functions ????

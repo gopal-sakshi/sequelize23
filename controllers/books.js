@@ -25,10 +25,20 @@ router.post('/posts', async (req, res) => {
 });
 
 router.get('/posts/:id', async (req, res) => {
-    db.books.findByPk(req.params.id, {include: 'Reviews'}).then(data => {
+    db.books.findByPk(req.params.id, { include: db.reviews }).then(data => {
         data ? res.status(200).send(data) : res.status(404).send('ID not found');
     });
 });
+
+router.get('/postReviews/:id', async (req, res) => {
+    let reviews23 = await db.books.findByPk(req.params.id).then(async (bookRow) => {
+        // return await bookRow.getParent();                // NOT WORKING
+        // https://stackoverflow.com/questions/22958683/how-to-implement-many-to-many-association-in-sequelize
+        return 23
+    });
+    res.send({info: reviews23});
+})
+
 
 router.get('/posts', async (req, res) => {
     var condition = {};

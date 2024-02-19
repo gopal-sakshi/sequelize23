@@ -13,5 +13,10 @@ module.exports = (sequelize, Sequelize) => {
         heroine: Sequelize.TEXT,
         director: Sequelize.TEXT
     }, { initialAutoIncrement: 100, timestamps : false });
+
+    movies.associate22 = (db23) => {
+        movies.belongsToMany(db23.actors, { through: 'ActorMovies23' })
+    }
+
     return movies;
 }
