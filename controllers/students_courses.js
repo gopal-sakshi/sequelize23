@@ -38,6 +38,24 @@ router.post('/createStudent', async (req, res) => {
     res.send(student);
 });
 
+router.get('/courses', async (req, res) => {
+    console.log('query param courseId list ====> ', req.query.courseId);    
+    whereClause = req.params.courseId
+    let courses = await db.courses.findAll({        
+        where: { id: { [db.Sequelize.Op.in] : req.query.courseId } },
+        // where: { id : [req.query.courseId] }         // also works... but ['1', '2' ]  != [ 1, 2 ]
+    });
+    res.send(courses)
+});
+
+router.get('/coursesWithStudents/:courseId', async (req, res) => {
+    let courses = await db.courses.findOne({
+        where: { id: req.params.courseId },
+        include: { model: db.students, attributes: ['name', 'id'] }
+    });
+    res.send(courses);
+});
+
 router.get('/students', async(req, res) => {
     let whereClause = { };
     req.query.email ? whereClause['email'] = { [db.Sequelize.Op.like]: `${req.query.email}` } : ''

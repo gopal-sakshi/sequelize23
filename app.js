@@ -11,11 +11,13 @@ const reviewsRouter = require('./routes/reviews');
 const booksRouter = require('./routes/books');
 const otherRouter = require('./routes/others23');
 const eduRouter = require('./routes/student_course');
+const empRouter = require('./routes/employees');
 
 app.use('', booksRouter);
 app.use('/reviews', reviewsRouter);
 app.use('', otherRouter);
 app.use('/edu', eduRouter);
+app.use('/employees', empRouter);
 /********************* ERROR HANDLER stuff ******************************************/
 function routeHandler23(acceptFnAsParam) {
     // MORAL ===> try/catch wont catch errors thrown in async functions ????
